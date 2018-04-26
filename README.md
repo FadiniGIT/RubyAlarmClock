@@ -1,5 +1,6 @@
 # RubyAlarmClock
 Basic alarm clock written in ruby
+(24hr time)
 
 to use (cd to location of the two files): 
 > ruby AlarmClock.rb

@@ -7,5 +7,5 @@ to use (cd to location of the two files):
 
 
 This program was written on a Mac, and I've seen that apparently line 39 won't work on other machines,
-if this is the case, try to replace it with:
-> pid = fork{ exec 'mpg123','-q', "AlarmSound.mp3" }
+For Linux with VLC installed:
+> pid = fork{ exec 'cvlc', "AlarmSound.mp3" }

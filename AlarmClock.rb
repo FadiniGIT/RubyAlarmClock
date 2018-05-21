@@ -2,7 +2,7 @@
 # => Basic Alarm Clock written in ruby
 # => Author: Fadini
 # => 4/26/2018
-#!/usr/bin/env ruby
+
 
 require 'date'
 

@@ -22,6 +22,7 @@ min = gets.chomp.to_i
 i = 0
 
 if timeHour == 12 && amPM == 2
+	twelvehour = hour
 	hour+=12
 end
 
@@ -31,10 +32,18 @@ setTime = DateTime.new(2017,4,26, hour, min)
 current_time.strftime "%H:%M"
 setTime.strftime "%H:%M"
 
-if min < 10
-	puts "Alarm set for #{hour}:0#{min}"
+if timeHour == 12
+	if min < 10
+		puts "Alarm set for #{twelvehour}:0#{min}"
+	else
+		puts "Alarm set for #{twelvehour}:#{min}"
+	end
 else
-	puts "Alarm set for #{hour}:#{min}"
+	if min < 10
+		puts "Alarm set for #{hour}:0#{min}"
+	else
+		puts "Alarm set for #{hour}:#{min}"
+	end
 end
 
 while i < 1
